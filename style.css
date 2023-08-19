@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+}
+
+
+.home-page{
+    height: 100vh;
+    display: flex;
+    /* flex:1; */
+}
+
+.home-page .left{
+    background-color: #000;
+    color: #fff;
+    width: 50%;
+    padding: 2rem;
+}
+
+.home-page .left h1{
+    font-size: 3.4rem;
+    color:#575A85;
+    text-transform: capitalize;
+    /* line-height:43.88px; */
+    margin-bottom: 2rem;
+    font-weight: 700;
+    margin-top:3rem ;
+}
+
+.home-page .left .info{
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #B8BCCC;
+}
+
+.home-page .left .img-box{
+    /* border: 2px solid white; */
+    margin: 5rem auto;
+    height: 40rem;
+    width: 50rem;
+    background: url('post-man.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+
+/* -------------------- right ----------------------- */
+
+.home-page .right{
+    background-color: #575a85;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page .right #ip-address{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #B8BCCC;
+    margin-bottom: 2rem;
+}
+
+.home-page .right #ip-address span{
+    color: #fff;
+    
+}
+
+.home-page .right button{
+    background: transparent;
+    font-size: 2.5rem;
+    color: #B8BCCC;
+    border: 2px solid;
+    outline: 0;
+    padding: 1rem 5rem;
+    border-radius: .5rem;
+    transition: all .3s;
+
+}
+
+.home-page .right button:hover{
+    color: white;
+    background-color: #5d6188;
+}
+
+
+.home-page{
+    /* display: none; */
+}
+
+
+/* ################################################### */
+
+
+/* --------------- post page ------------------ */
+
+.get-post-page{
+    display: none;
+    color: #bbbccc;
+    position: relative;
+    
+}
+
+.ip-address-info{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+
+.ip-address-info .post-ip-address{
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+.ip-address-info .post-ip-address span{
+    color: #fff;
+    font-weight: 600;
+}
+
+.ip-address-info .location-details{
+    margin-top: 2rem;
+    font-size: 3.4rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    
+}
+
+.ip-address-info .location-details p{
+    width: 30%;
+    margin: 0 2rem 1rem 0;
+}
+
+.ip-address-info .location-details span{
+    color: white;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+
+
+/* -------map ----------- */
+
+.get-post-page .map{
+    background: #575A85;
+    margin-top: 5rem;
+    padding: 2rem 4rem 7rem 4rem;
+    width: 100%;
+}
+
+.get-post-page .map h1{
+    text-align: center;
+    font-size: 4.8rem;
+    margin: 1rem 0;
+}
+
+.get-post-page .map .map-container{
+    height: 90rem;
+}
+
+
+
+/* ----------------more-info------------------- */
+
+.more-info{
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+}
+
+.more-info h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.more-info .data-container{
+    margin-top: 4rem;
+}
+
+.more-info .data-container div{
+    text-transform: capitalize;
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.more-info .data-container div span{
+    margin-left: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
+/* -------------------post-office-near------------- */
+
+.post-office-wrapper{
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+}
+
+.post-office-wrapper h1{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.post-office-wrapper .input-box{
+    border:2px solid #575A85;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    height: 6rem;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    border-radius: 1rem;
+
+}
+
+.post-office-wrapper .input-box i{
+    margin-left: 1rem;
+}
+
+.post-office-wrapper .input-box input{
+    width: 100%;
+    height: 100%;
+    padding: .7rem;
+    font-size: 2.4rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #B8BCCC;
+}
+
+/* ------ post-office-conatiner--------- */
+
+.post-office-container{
+    margin-top: 2rem;
+    /* padding:; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+    
+}
+
+.post-office-container #post-office-details{
+    padding: 2rem;
+    border-radius: .7rem;
+    background-color: #575A85;
+    color: #bbbccc;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* --------input     ------------- */
+
+.input-wrapper{
+    /* border: 2px solid; */
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    background: #575A85;
+    font-size: 2.5rem;
+    color: #B8BCCC;
+    /* border: 2px solid; */
+    border: 0;
+    outline: 0;
+    outline: 0;
+    padding: 1.5rem 5rem;
+    border-radius: 1rem;
+    transition: all .3s;
+    align-self: end;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: -25px;
+}
+
+#search:hover{
+    background: transparent;
+    border: 2px solid #B8BCCC;
+    
+}
+
+.post-office-container p.para{
+    text-align: center;
+    margin: 3rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    color: red;
+}

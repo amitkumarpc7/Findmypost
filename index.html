@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Post-Office</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="home-page">
+        <div class="left">
+            <h1 class="heading">post office application</h1>
+            <p class="info">This Application Allows you to extract information about the nearest Post Offices, based on your location.</p>
+            <div class="img-box">
+                <!-- <img src="" alt=""> -->
+            </div>
+        </div>
+
+        <!-- right -->
+        <div class="right">
+            <p id="ip-address">Your Current IP Address is <span id="ip">IP Not Found</span></p>
+            <button id="get-started">Get Started</button>
+        </div>
+    </div>
+
+    <!-- get-post-page -->
+    <div class="get-post-page">
+        <div class="ip-address-info">
+            <p class="post-ip-address"> IP Address : <span>127.0.01</span></p>
+
+            <div class="location-details">
+                <p id="lat">Lat :  <span>lorem</span></p>
+                <p id="city">city :  <span>lorem</span></p>
+                <p id="oragnisation">Oragnisation :  <span>lorem</span></p>
+                <p id="long">Long :  <span>lorem</span></p>
+                <p id="region">Region :  <span>lorem</span></p>
+                <p id="hostname">Hostname :  <span>lorem</span></p>
+            </div>
+
+        </div>
+
+        <!-- map -->
+        <div class="map">
+            <h1>Your Current Location</h1>
+
+            <div class="map-container">
+
+                <iframe id="g-map"
+                src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                style="border:0">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- ----more-info  -->
+
+        <div class="more-info">
+            <h2>more information about you</h2>
+
+            <div class="data-container">
+                <div id="time-Zone">TIme zone: <span>lorem</span></div>
+                <div id="date-time">date and time: <span>lorem</span></div>
+                <div id="pincode">pincode: <span>lorem </span></div>
+                <div id="message">message: <span style=" color: #bbbccc;">number of pincode(s) found:</span></div>
+            </div>
+        </div>
+
+        <!-- ----- post-office------ -->
+
+        <div class="post-office-wrapper">
+            <h1>Post office near you</h1>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search By Name" id="input">
+                </div>
+
+                <button id="search">Search</button>
+            </div>
+
+            <div class="post-office-container">
+
+                <!-- <p>0 Results found</p> -->
+
+                <!-- <div id="post-office-details">
+                    <p id="name">Name</p>
+                    <p id="branch-type">Branch Type</p>
+                    <p id="delivery-status">delivery status</p>
+                    <p id="district">district</p>
+                    <p id="division">division</p>
+                    
+                </div>
+
+                <div id="post-office-details">
+                    <p id="name">Name</p>
+                    <p id="branch-type">Branch Type</p>
+                    <p id="delivery-status">delivery status</p>
+                    <p id="district">district</p>
+                    <p id="division">division</p>
+                </div>
+
+                <div id="post-office-details">
+                    <p id="name">Name</p>
+                    <p id="branch-type">Branch Type</p>
+                    <p id="delivery-status">delivery status</p>
+                    <p id="district">district</p>
+                    <p id="division">division</p>
+                </div>
+
+                <div id="post-office-details">
+                    <p id="name">Name</p>
+                    <p id="branch-type">Branch Type</p>
+                    <p id="delivery-status">delivery status</p>
+                    <p id="district">district</p>
+                    <p id="division">division</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
